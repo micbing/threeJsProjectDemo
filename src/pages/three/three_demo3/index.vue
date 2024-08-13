@@ -3,7 +3,7 @@
     <div class="canvas-container" ref="screenDom"></div>
     <div class="loading" v-if="progress != 100"></div>
     <div class="progress" v-if="progress != 100">
-      <img src="./assets/loading.gif" alt="" />
+      <img src="../../../assets//loading.gif" alt="" />
       <span>地球加载中：{{ progress }}%</span>
     </div>
     <div class="title">酷炫3D地球</div>

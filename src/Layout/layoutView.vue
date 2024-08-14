@@ -110,6 +110,11 @@ const items = ref([
         label: '3d地球',
         title: '3d地球'
       },
+      {
+        key: 'three-demo4',
+        label: '3d汽车模型',
+        title: '3d汽车模型'
+      },
     ]
   },
   {

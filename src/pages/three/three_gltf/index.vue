@@ -53,7 +53,7 @@ onMounted(() => {
 })
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .box {
     width: 100%;
     height: 100%;

@@ -17,6 +17,7 @@ import threeTween from '../pages/three/three_tween/index.vue'
 import threeDemo1 from '../pages/three/three_demo1/index.vue'
 import threeDemo2 from '../pages/three/three_demo2/index.vue'
 import threeDemo3 from '../pages/three/three_demo3/index.vue'
+import threeDemo4 from '../pages/three/three_demo4/index.vue'
 const routes = [
     {
         path: '/',
@@ -103,6 +104,11 @@ const routes = [
        path: '/three-demo3',
        name: 'three-demo3',
        component:threeDemo3
+    },
+     {
+       path: '/three-demo4',
+       name: 'three-demo4',
+       component:threeDemo4
     }
 ]
 export default createRouter({

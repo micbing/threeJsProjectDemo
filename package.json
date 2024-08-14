@@ -11,6 +11,7 @@
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
     "@surely-vue/table": "^4.2.2",
+    "@tweenjs/tween.js": "^25.0.0",
     "animate.css": "^4.1.1",
     "ant-design-vue": "^4.0.7",
     "dat.gui": "^0.7.9",

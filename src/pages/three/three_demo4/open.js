@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import {
     camera
 } from './RendererCamera.js';
-import './tween.umd.js'
+import {Tween} from 'three/examples/jsm/libs/tween.module.js'
 // 创建一个监听者
 var listener = new THREE.AudioListener();
 
@@ -89,7 +89,7 @@ function openClose(axis, angle1, angle2, door,openClose) {
     var state = {
         angle: angle1, // 车门动画开始角度
     };
-    var tween =new TWEEN.Tween(state); //创建一段tween动画
+    var tween =new Tween(state); //创建一段tween动画
     tween.to({
         angle: angle2, // 车门动画结束角度
     }, 1000); //1000：表示动画执行时间1000毫秒(ms)

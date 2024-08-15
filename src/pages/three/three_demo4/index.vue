@@ -65,7 +65,9 @@ const computedLightSrc = computed(() => {
     return light.value?url:url2
 })
 onUnmounted(() => {
-   backgroundAudio.pause();  
+  backgroundAudio.pause();  
+      const divWrap=document.getElementById('app')
+    divWrap.removeChild(renderer.domElement);
 })       
 onMounted(() => {
         

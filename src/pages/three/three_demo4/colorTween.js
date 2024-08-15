@@ -2,7 +2,7 @@ import {
     model
 } from '../../../../public/scene/model.js';
 import * as THREE from 'three';
-import './tween.umd.js'
+import {Tween} from 'three/examples/jsm/libs/tween.module.js'
 var colorArr16 = [0x023911, 0x222222, 0x6a030a, 0x000000, 0xffffff];
 var colorArr = []
 // 转为十进制
@@ -23,7 +23,7 @@ var color = {
 var tweenArr = []; //所有动画片段tween的集合
 // 批量创建动画片段tween
 for (var i = 0; i < colorArr.length; i++) {
-    var tween1 = new TWEEN.Tween(color)
+    var tween1 = new Tween(color)
         .to({
             r: colorArr[i].r,
             g: colorArr[i].g,
@@ -32,7 +32,7 @@ for (var i = 0; i < colorArr.length; i++) {
         .onUpdate(function () {
             setColor(color.r, color.g, color.b);
         });
-    var tween2 = new TWEEN.Tween(color)
+    var tween2 = new Tween(color)
     if (i < colorArr.length-1) {
         tween2.to({
                 r: colorArr[i + 1].r,

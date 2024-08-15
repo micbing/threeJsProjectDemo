@@ -91,7 +91,7 @@ rgbeLoader.load("./textures/sky.hdr", (texture) => {
 });
 
 // 加载模型
-gltfLoader.load("/scene/model/scene.glb", (gltf) => {
+gltfLoader.load("/model/scene.glb", (gltf) => {
   const model = gltf.scene;
   model.traverse((child) => {
     if (child.name === "Plane") {

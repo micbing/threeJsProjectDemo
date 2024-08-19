@@ -80,11 +80,11 @@ const items = ref([
         label: '加载3D模型',
         title: '加载3D模型'
       },
-      {
-        key: 'tween',
-        label: '3D中常用得动画库',
-        title: '3D中常用得动画库'
-      },
+      // {
+      //   key: 'tween',
+      //   label: '3D中常用得动画库',
+      //   title: '3D中常用得动画库'
+      // },
       {
         key: 'three-ray',
         label: '3D的光线投射-物体交互',

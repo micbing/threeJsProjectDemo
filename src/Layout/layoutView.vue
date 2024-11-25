@@ -59,7 +59,7 @@ const collapsed = ref(false);
 const router = useRouter()
 const route = useRoute()
 const items = ref([
-  {
+ /* {
     key: 't',
     icon: () => h(AppstoreOutlined),
     label: 'web3D相关',
@@ -116,7 +116,7 @@ const items = ref([
         title: '3d汽车模型'
       },
     ]
-  },
+  },*/
   {
     key: 'canvas',
     icon: () => h(VideoCameraOutlined),
@@ -129,7 +129,33 @@ const items = ref([
         title: '调用设备摄像头'
       }
     ]
-  }
+  },
+    {
+    key: 'photoshot',
+    icon: () => h(VideoCameraOutlined),
+    label: '视频剪辑相关',
+    title: '视频剪辑相关',
+    children: [
+      {
+        key: 'photoshot',
+        label: '视频剪辑',
+        title: '视频剪辑'
+      }
+    ]
+  },
+  //  {
+  //   key: 'scrollView',
+  //   icon: () => h(VideoCameraOutlined),
+  //   label: 'scrollView相关',
+  //   title: 'scrollView相关',
+  //   children: [
+  //     {
+  //       key: 'scroll',
+  //       label: 'scroll测试',
+  //       title: 'scroll测试'
+  //     }
+  //   ]
+  // }
 ])
 const handleSelect = (item) => {
   router.push('/' + item.key)
